@@ -12,7 +12,7 @@ public class LetterCount {
                 int len = line.length();
                 for(int i=0; i<len; i++){
                     char c=line.charAt(i);
-                    if(!( (c>='0' && c<='9') || (c>='A' && c<='Z') || (c>='a' && c<='z') ) ){
+                    if(!( ((c>='A' && c<='Z') || (c>='a' && c<='z') ) ){
                         continue;
                     }
                     if(counter.containsKey(c)){
